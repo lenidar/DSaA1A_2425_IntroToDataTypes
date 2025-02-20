@@ -38,6 +38,7 @@ namespace DSaA1A_2425_IntroToDataTypes
             a = (byte)b;
             a = (byte)c;
 
+            #region character to int
             int k = 65;
             char l = (char)k;
 
@@ -47,15 +48,18 @@ namespace DSaA1A_2425_IntroToDataTypes
             Console.WriteLine(l);
 
             k = l;
-            Console.WriteLine(k);
+            Console.WriteLine(k); 
+            #endregion
 
+            #region New Region
             string thing = "Southville";
 
             for (int x = 0; x < thing.Length; x++)
                 Console.Write((int)thing[x] + " ");
             Console.WriteLine();
             for (int x = thing.Length - 1; x > -1; x--)
-                Console.Write(thing[x]);
+                Console.Write(thing[x]); 
+            #endregion
 
             char[] thing2 = thing.ToCharArray();
 
